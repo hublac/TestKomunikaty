@@ -8,11 +8,6 @@ import C2.Annoucment;
 public class TestKomunikaty {
 	Annoucment annoucment = new Annoucment();
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-	}
-	
 	@Test
 	void test_showMessageAnnouncment_success() {
 		//Given
@@ -21,7 +16,7 @@ public class TestKomunikaty {
 		
 		//When
 		try {
-			announcment.showMessage(message);
+			annoucment.showMessage(message);
 		} catch(Exception e) {
 			isSuccess = false;
 		}
@@ -39,7 +34,7 @@ public class TestKomunikaty {
 		//When
 		try {
 			for(int i = 1; i <= loopScope; i++) {
-				announcment.showMessage(String.valueOf(i));
+				annoucment.showMessage(String.valueOf(i));
 			}
 		} catch(Exception e) {
 			isSuccess = false;
